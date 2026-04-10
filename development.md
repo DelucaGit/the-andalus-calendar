@@ -1,19 +1,10 @@
-April 9: Initial Backend Setup
-Status: Initial Milestone Reached.
+# April 9 2026
+- Created project folder for backend and frontend
+- Connected the root folder to Github repository
 
-Project Setup: Initialized the Spring Boot backend using Java 21.
-
-DataSource Configuration: Fixed a startup error where the app failed because the database connection wasn't mapped yet.
-
-Learning Curve: Explored Spring Boot's autoconfiguration. Realized that even small mistakes in the settings file can stop the entire app from launching.
-
-April 10: Database Connection & Stability
-Status: Database is live and tables are generated.
-
-PostgreSQL Access: Recovered the database password, which allowed us to connect the backend to the local Postgres server without a full reset.
-
-Version Sync: Found out the project was running an unstable version of Spring Boot (4.0.5). Downgraded to 3.4.0, which fixed several "package not found" errors.
-
-Server Fix: Added the missing web server dependency (spring-boot-starter-web) so the app stays running on port 8080.
-
-JPA Trigger: Created a UserRepository interface. This was the final piece that signaled Hibernate to actually create the calendar_users table in pgAdmin.
+# April 10 2026
+- Set up PostgreSQL database locally
+- Created CalendarUser model that represents the user
+- Connected the CalendarUser to the PostgreSQL and created a table in the database for the user
+- Ran into some version issues. The project was running on version 4.0.5, I downgraded to 3.4.0 to avoid support issues.
+- I made sure the database crendentials were written in environmental variables like ${DB_USERNAME} so that credentials can not be leaked. Also so that this repository can be kept public. 
