@@ -2,7 +2,6 @@ package se.andaluscalendar.backend.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 
@@ -21,4 +20,7 @@ public class CalendarUser {
 
     @Column(unique = true, nullable = false)
     private String email;
+
+    @Column(nullable = false)
+    private String password;
 }
