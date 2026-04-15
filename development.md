@@ -14,3 +14,6 @@
 - So far I have mae a JwtUtils, 3 DTO's : AuthResponse, LoginRequest & RegisterRequest.
 - I've started working on AuthController but not yet finished.
 - The idea with JWT is to keep the heavy lifting of authentication away from the server, since it keeps the authentication process stateless. 
+
+# April 15 2026
+- Sketched an architecture diagram for how data will flow between parts of the application
